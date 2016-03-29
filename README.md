@@ -11,6 +11,10 @@ Run 'bower install' and 'npm install'
 
 Run `grunt` for building and `grunt serve` for preview.
 
+##IMPORTANT
+
+Please make sure that you run browser enabled CORS.
+
 ## Testing
 
 Running `grunt test` will run the unit tests with karma.
