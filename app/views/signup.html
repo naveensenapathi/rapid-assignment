@@ -1,0 +1,28 @@
+<div class="signup-container">
+    <h4 class="signup-heading">
+    Signup
+    </h4>
+    <form name="signupForm">
+        <div class="form-group">
+            <span class="glyphicon glyphicon-ok icon-ok" ng-show="signupForm.email.$valid"></span>
+            <span class="glyphicon glyphicon-remove icon-remove" ng-show="signupForm.email.$dirty && signupForm.email.$error.required"></span>
+            <input name="email" type="email" class="form-control signup-textfield" placeholder="Email" ng-model="signUpDetails.email" required>
+        </div>
+        <div class="form-group">
+            <span class="glyphicon glyphicon-ok icon-ok" ng-show="signupForm.username.$valid"></span>
+            <span class="glyphicon glyphicon-remove icon-remove" ng-show="signupForm.username.$dirty && signupForm.username.$error.required"></span>
+            <input name="username" class="form-control signup-textfield" placeholder="Username" ng-model="signUpDetails.username" required>
+        </div>
+        <div class="form-group">
+            <span class="glyphicon glyphicon-ok icon-ok" ng-show="signupForm.password.$valid"></span>
+            <span class="glyphicon glyphicon-remove icon-remove" ng-show="signupForm.password.$dirty && signupForm.password.$error.required"></span>
+            <input name="password" type="password" class="form-control signup-textfield" placeholder="Password" ng-model="signUpDetails.password" required>
+        </div>
+        <div>
+            <button type="submit" class="btn btn-default signup-btn" ng-click="signup()" ng-disabled="signupForm.email.$invalid || signupForm.username.$invalid || signupForm.password.$invalid">Signup</button>
+        </div>
+        <div class="signup-link-container">
+            <a ui-sref="main.login" class="sign-up-link">Already have an account? Login here</a>
+        </div>
+    </form>
+</div>

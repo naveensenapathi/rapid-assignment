@@ -1,0 +1,278 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+$fa-font-path: "/node_modules/font-awesome/fonts";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+@import "font-awesome/scss/font-awesome.scss";
+// endbower
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+body {
+    padding: 0;
+}
+
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+
+.header,
+.marketing,
+.footer {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+/* Custom page header */
+
+.header {
+    margin-bottom: 10px;
+    /* Make the masthead heading the same height as the navigation */
+    h3 {
+        margin-top: 0;
+        margin-bottom: 0;
+        line-height: 40px;
+        padding-bottom: 19px;
+    }
+}
+
+
+/* Custom page footer */
+
+.footer {
+    padding-top: 19px;
+    color: #777;
+    border-top: 1px solid #e5e5e5;
+}
+
+.container-narrow > hr {
+    margin: 30px 0;
+}
+
+
+/* Main marketing message and sign up button */
+
+.jumbotron {
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+    .btn {
+        font-size: 21px;
+        padding: 14px 24px;
+    }
+}
+
+
+/* Supporting marketing content */
+
+.marketing {
+    margin: 40px 0;
+    p + h4 {
+        margin-top: 28px;
+    }
+}
+
+
+/* Responsive: Portrait tablets and up */
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 730px;
+    }
+    /* Remove the padding we set earlier */
+    .header,
+    .marketing,
+    .footer {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    /* Space out the masthead */
+    .header {
+        margin-bottom: 30px;
+    }
+    /* Remove the bottom border on the jumbotron for visual effect */
+    .jumbotron {
+        border-bottom: 0;
+    }
+}
+
+
+/* Custom CSS */
+
+.login-container {
+    text-align: center;
+    margin: 0 auto;
+    width: 20%;
+    margin-top: 10%;
+    .social-buttons {
+        margin: 12px 0;
+    }
+    .social-buttons a {
+        width: 49%;
+    }
+    .a {
+        color: #428bca;
+        text-decoration: none;
+    }
+    .btn {
+        display: inline-block;
+        padding: 6px 12px;
+        margin-bottom: 0;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1.42857143;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        background-image: none;
+        border-radius: 4px;
+    }
+    .btn-gp {
+        color: #fff;
+        background-color: #d34836;
+    }
+    .btn-fb {
+        color: #fff;
+        background-color: #3b5998;
+    }
+    .remember-me-checkbox {
+        text-align: left;
+    }
+    .submit-btn {
+        display: block;
+        margin: 10% auto 8% auto;
+        padding: 2% 15%;
+    }
+}
+
+.home-container {
+    width: 80%;
+    margin: 0 auto;
+    .post-card {
+        background: #fff;
+        border-radius: 2px;
+        display: block;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        transition: all 0.2s ease-in-out;
+        padding: 5%;
+        margin: 2% 0;
+    }
+    .post-card:hover {
+        box-shadow: 0 3px 12px rgba(0, 0, 0, 0.19), 0 2px 2px rgba(0, 0, 0, 0.23)
+    }
+    .post-image {
+        width: 100%;
+    }
+    .post-message {
+        margin-bottom: 5%;
+        width: 100%;
+    }
+    .post-link a {
+        color: black;
+    }
+    .post-link {
+        display: block;
+        margin-top: 5%;
+        font-size: 1em;
+        color: grey;
+    }
+    .social-search-section {
+        margin-bottom: 10%;
+        height: auto;
+    }
+    .social-search {
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-left: 0;
+    }
+    .social-save {
+        float: right;
+    }
+}
+
+.loaderDiv {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1100;
+    background-color: white;
+    opacity: .6;
+}
+
+.ajax-loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -32px;
+    /* -1 * image width / 2 */
+    margin-top: -32px;
+    /* -1 * image height / 2 */
+    display: block;
+}
+
+.signup-link-container {
+    clear: right;
+    text-align: center;
+}
+
+.sign-up-link {
+    margin-top: 5%;
+}
+
+.signup-container {
+    width: 20%;
+    margin: 0 auto;
+    margin-top: 15%;
+    text-align: center;
+}
+
+.signup-btn {
+    display: block;
+    margin: 10% auto 8% auto;
+    padding: 2% 15%;
+}
+
+.signup-heading {
+    margin-bottom: 10%;
+}
+
+.app-heading {
+    margin-left: 10%;
+    display: inline-block;
+}
+
+.logout-container {
+    display: inline-block;
+    float: right;
+    margin-right: 3%;
+    cursor: pointer;
+    font-size: 1.2em;
+    line-height: 3;
+}
+
+.login-textfield {
+    display: inline-block;
+    width: 90%;
+}
+
+.signup-textfield {
+    display: inline-block;
+    width: 90%;
+}
+
+.icon-ok {
+    color: #4CAF50;
+}
+
+.icon-remove {
+    color: #f44336;
+}
