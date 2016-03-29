@@ -15,9 +15,11 @@ angular.module('rapidAssignmentApp')
             password: null
         }
 
+        $scope.successMessage = "";
         $scope.signup = function() {
             userService.signup(this.signUpDetails).then(function(response) {
                 console.log(response.data);
+                $scope.successMessage = response.data.message;
             }, function(err) {
                 console.log("Failed creating user:" + JSON.stringify(err));
             });
