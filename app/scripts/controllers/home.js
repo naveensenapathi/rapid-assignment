@@ -9,7 +9,7 @@
  */
 angular.module('rapidAssignmentApp')
     .controller('HomeCtrl', ['$rootScope', '$scope', '$state', '$window', 'facebookService', 'feedService', 'userService', 'storageService', function($rootScope, $scope, $state, $window, facebookService, feedService, userService, storageService) {
-        $scope.searchQuery = "";
+        $scope.searchQuery = "rapidbizapps";
         $scope.savedSearchQuery = {
             query: "",
             limit: 5

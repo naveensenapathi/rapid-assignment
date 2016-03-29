@@ -21,7 +21,7 @@ angular.module('rapidAssignmentApp')
         };
 
         this.getUserFeed = function(query) {
-            !query ? query = "mtuity" : "";
+            !query ? query = "rapidbizapps" : "";
             return $http.get(globals.url + ":" + globals.port + "/fbservice/search/" + query + "/" + app_id);
         };
 
